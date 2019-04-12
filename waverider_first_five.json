@@ -1,0 +1,50 @@
+{
+  "datafile":"waverider_test_data.txt",
+  "outputfile":"waverider_test_data.bin",
+  "section0":{
+      "bufr":{"width":4,"value":"BUFR","kind":"CCITT IA5"},
+      "length":{"width":3,"value":0,"kind":"int"},
+      "version":{"width":1,"value":4,"kind":"int"}
+  },
+  "section1" : {
+      "length":                     {"width":3, "value":22, "kind":"int"},
+      "master_table":               {"width":1, "value":0,    "kind":"int"},
+      "originating_centre":         {"width":2, "value":65535, "kind":"int"},
+      "sub_centre":                 {"width":2, "value":65535, "kind":"int"},
+      "update_sequence":            {"width":1, "value":0, "kind":"int"},
+      "optional_section":           {"width":1, "value":0, "kind":"int"},
+      "data_category":              {"width":1, "value":1, "kind":"int"},
+      "international_sub_category": {"width":1, "value":6, "kind":"int"},
+      "local_sub_category":         {"width":1, "value":255, "kind":"int"},
+      "master_table_verions":       {"width":1, "value":0, "kind":"int"},
+      "local_table_version":        {"width":1, "value":255, "kind":"int"},
+      "year":                       {"width":2, "value":2019, "kind":"int"},
+      "month":                      {"width":1, "value":2, "kind":"int"},
+      "day":                        {"width":1, "value":27, "kind":"int"},
+      "hour":                       {"width":1, "value":23, "kind":"int"},
+      "minute":                     {"width":1, "value":6, "kind":"int"},
+      "second":                     {"width":1, "value":0, "kind":"int"},
+      "optional":                   {"width":0, "value":null, "kind":"int"}
+  },
+  "section2": {
+      "length":    {"width":3, "value":4, "kind":"int"},
+      "zero":      {"width":1, "value":0, "kind":"int"},
+      "local_use": {"width":0, "value":null, "kind":"int"}
+  },
+  "section3":{
+      "length":         {"width":3, "value":9,  "kind":"int"},
+      "zero":           {"width":1, "value":0,     "kind":"int"},
+      "number_subsets": {"width":2, "value":1,  "kind":"int"},
+      "flags":          {"width":1, "value":128,  "kind":"int"},
+      "descriptors":    {"width":2, "value":["315010"], "kind":"list"}
+  },
+  "section4" : {
+      "length": {"width":3, "value":null, "kind":"int"},
+      "zero":   {"width":1, "value":0, "kind":"int"},
+      "data":   {"width":0, "value":null, "kind":"bin"}
+  },
+  "section5":  {
+      "sevens":{"width":4, "value":"7777", "kind":"CCITT IA5"}
+  },
+  "payload":null
+}
